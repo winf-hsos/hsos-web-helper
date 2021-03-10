@@ -10,7 +10,7 @@ import {
     trainFaceRecognition,
     matchFace,
     addImage
-} from './lib/face_recognition.js';
+} from './lib/ml/face_recognition.js';
 
 var face = {
     setupCameraForFaceRecognition,

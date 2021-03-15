@@ -33,5 +33,5 @@ if (typeof window !== 'undefined') {
     // Face Recogintion
     window.face = face;
 
-    console.log("Successfully loaded IODO Helper V0.1");
+    console.log("Successfully loaded HSOS Web Helper V0.1");
 }

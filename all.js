@@ -1,4 +1,4 @@
-import { log, clearLog, getInput } from './lib/utils.js';
+import { writeLog, clearLog, getInput } from './lib/utils.js';
 import {
     setupCameraForFaceRecognition,
     loadFaceRecognitionModels,
@@ -26,7 +26,7 @@ var face = {
 }
 
 if (typeof window !== 'undefined') {
-    window.log = log;
+    window.writeLog = writeLog;
     window.clearLog = clearLog;
     window.getInput = getInput;
 

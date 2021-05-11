@@ -3,7 +3,7 @@ log("Test")
 
 function printValue() {
     let text = getInput("myInput");
-    log(text)
+    writeLog(text)
 }
 
 tf.initDevices(done);

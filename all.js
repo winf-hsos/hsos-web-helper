@@ -12,6 +12,14 @@ import {
     addImage
 } from './lib/ml/face_recognition.js';
 
+import {
+    setupWebcam,
+    loop,
+    loadImageModel,
+    predictObjectInImage,
+    startPrediction
+} from './lib/ml/tm_image.js'
+
 var face = {
     setupCameraForFaceRecognition,
     loadFaceRecognitionModels,
@@ -25,6 +33,15 @@ var face = {
     addImage
 }
 
+var tm = {}
+tm.image = {
+    setupWebcam,
+    loop,
+    loadImageModel,
+    predictObjectInImage,
+    startPrediction
+}
+
 if (typeof window !== 'undefined') {
     window.writeLog = writeLog;
     window.clearLog = clearLog;
@@ -32,6 +49,9 @@ if (typeof window !== 'undefined') {
 
     // Face Recogintion
     window.face = face;
+
+    // Teachable Machine 
+    window.tm = tm;
 
     console.log("Successfully loaded HSOS Web Helper V0.1");
 }
